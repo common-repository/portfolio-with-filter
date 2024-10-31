@@ -1,0 +1,125 @@
+/* CLEARFIX
+----------------------------------------------- */
+
+.clearboth {
+    display: block;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+/* PORTFOLIO FILTER STYLE
+----------------------------------------------- */
+
+#portfolio-filter {
+    list-style-type: none;
+}
+
+#portfolio-filter li {
+    display: inline;
+    padding-right: 10px;
+}
+
+#portfolio-filter li a {
+    color: #000dd;
+    text-decoration: none !important;
+    font-size:18px;
+    font-weight:bold;
+    margin: 20px;
+}
+#portfolio-filter li .current,
+#portfolio-filter li:hover {
+    color: #084a9a;
+}
+
+/* PORTFOLIO LIST STYLE
+----------------------------------------------- */
+.portfolio-title {
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+#portfolio-wrapper {
+    padding-bottom: 25px;
+}
+
+#portfolio-list {
+    list-style-type: none;
+
+}
+
+#portfolio-list .portfolio-item {
+    float: left;
+    margin-right: 5px;
+    box-shadow:0px 6px 20px 0px rgba(12, 12, 28, 0.4);
+    margin: 0.5rem;
+    padding: 2%;
+}
+
+#portfolio-list .portfolio-item h3 a {
+    color: #084a9a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#portfolio-list .portfolio-item .excerpt
+{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+}
+
+#portfolio-list .portfolio-item .excerpt a {
+    color: #555;
+}
+
+#portfolio-list .portfolio-item .excerpt a:hover {
+    text-decoration: none;
+}
+#portfolio-filter {
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+.attachment-medium.size-medium.wp-post-image{
+    height:auto !important;
+    min-height:200px !important;
+}
+.title-link-none{
+  text-decoration: none !important;
+}
+@media (min-width: 992px) {
+    #portfolio-list .portfolio-item {
+        width: 17.5rem;
+        margin-bottom: 2rem;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+#portfolio-list .portfolio-item{
+	width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 480px){
+#portfolio-list .portfolio-item{
+	margin: 0rem !important;
+    width: 100% !important;
+    margin-top: 5% !important;
+    height: auto !important;
+}
+	.attachment-medium.size-medium.wp-post-image{
+		height: 200px !important;
+        min-width: 100% !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #portfolio-list .portfolio-item {
+        width: 12.5rem;
+    }
+}
